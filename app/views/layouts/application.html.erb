@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/jquery.sidr.dark.css">
 
@@ -12,9 +12,23 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  <header>
+    <div class='header'>
+      <div class='header-links text-center'>
+	       <%= link_to "Home", "home" %>
+         <%= link_to "Learn More", "about" %>
+      </div>
+    </div>
+  </header>
   <body>
     <%= yield %>
   </body>
-  <%# <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %> %>
+  <%# <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <footer>
+    <div class='footer'>
+      <div class='col-12 text-center footer-text'>
+        Hi, I'm the footer
+      </div>
+    </div>
+  </footer>
 </html>

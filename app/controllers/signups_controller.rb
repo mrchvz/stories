@@ -3,14 +3,14 @@ class SignupsController < ApplicationController
 		@signup = Signup.new
 	end
 
-  	def create
-  		@signup = Signup.new(signup_params)
-  		if @signup.save
-    		#ThanksMailer.thanks.deliver_now
-    		redirect_to '/thanks'
-  		else
-    		render 'new'
-  		end
+	def create
+		@signup = Signup.new(signup_params)
+		if @signup.save
+  		#ThanksMailer.thanks.deliver_now
+  		redirect_to '/thanks'
+		else
+  		render 'new'
+		end
 	end
 
 	def thanks
